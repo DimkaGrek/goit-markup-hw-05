@@ -601,3 +601,36 @@ nav {
     visibility: hidden;
     pointer-events: none;
 }
+
+/* Form */
+.form-container {
+    padding: 72px 24px 24px 24px;
+}
+
+.form-title {
+    color: var(--NAVY-BLUE);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    margin-bottom: 16px;
+}
+
+.form-contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label {
+    color: var(--LIGHT-SLATE);
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.17; /* 116.667% */
+    letter-spacing: 0.48px;
+    margin-bottom: 4px;
+}
+
+.form-field {
+    margin-bottom: 8px;
+}

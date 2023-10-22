@@ -601,43 +601,74 @@
                     </h3>
                     <form class="form-contact" action="">
                         <label class="form-label" for="name">Name</label>
-                        <input
-                            class="form-field"
-                            type="text"
-                            name="name"
-                            id="name"
-                        />
+                        <div class="input-wrapper">
+                            <svg class="input-svg" width="18" height="18">
+                                <use
+                                    href="./images/icons.svg#icon-person-black"
+                                ></use>
+                            </svg>
+                            <input
+                                class="form-field"
+                                type="text"
+                                name="name"
+                                id="name"
+                            />
+                        </div>
 
                         <label class="form-label" for="phone">Phone</label>
-                        <input
-                            class="form-field"
-                            type="text"
-                            name="phone"
-                            id="phone"
-                        />
+                        <div class="input-wrapper">
+                            <svg class="input-svg" width="18" height="18">
+                                <use
+                                    href="./images/icons.svg#icon-phone-black"
+                                ></use>
+                            </svg>
+                            <input
+                                class="form-field"
+                                type="text"
+                                name="phone"
+                                id="phone"
+                            />
+                        </div>
 
                         <label class="form-label" for="email">Email</label>
-                        <input
-                            class="form-field"
-                            type="email"
-                            name="email"
-                            id="email"
-                        />
+                        <div class="input-wrapper">
+                            <svg class="input-svg" width="18" height="18">
+                                <use
+                                    href="./images/icons.svg#icon-email-black"
+                                ></use>
+                            </svg>
+                            <input
+                                class="form-field"
+                                type="email"
+                                name="email"
+                                id="email"
+                            />
+                        </div>
 
                         <label class="form-label" for="comment">Comment</label>
                         <textarea
                             class="form-textarea"
                             name="comment"
                             id="comment"
-                            cols="30"
-                            rows="10"
                             placeholder="Text input"
                         ></textarea>
 
-                        <label>
-                            <input type="checkbox" name="policy" id="policy" />
-                            I accept the terms and conditions of the Privacy
-                            Policy
+                        <label class="policy-label">
+                            <input
+                                class="policy-input"
+                                type="checkbox"
+                                name="policy"
+                                id="policy"
+                            />
+                            <span class="checkbox-svg">
+                                <svg width="16" height="16">
+                                    <use
+                                        href="./images/icons.svg#icon-click"
+                                    ></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the
+                            <a href="" class="policy-link">Privacy Policy</a>
                         </label>
 
                         <button class="btn-submit" type="submit">Send</button>

@@ -422,7 +422,11 @@ nav {
     margin-top: 16px;
     width: 264px;
 }
-.footer-media-title {
+.footer-media {
+    margin-right: 80px;
+}
+.footer-media-title,
+.footer-subscribe-title {
     color: var(--WHITE, #fff);
     font-size: 16px;
     font-weight: 500;
@@ -439,6 +443,69 @@ nav {
     background-color: var(--GREEN);
 }
 
+.footer-subscribe-form {
+    display: flex;
+}
+.footer-subscribe-input {
+    /* Обнуляем настройки input */
+    margin: 0;
+    padding: 0;
+    outline: none;
+    /* Отменить фон */
+    background: transparent;
+    /* Отменить стандартные тени в некоторых браузерах */
+    box-shadow: none;
+
+    padding: 8px 16px;
+    margin-right: 24px;
+
+    color: var(--WHITE);
+    background-color: transparent;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+    letter-spacing: 0.48px;
+
+    border-radius: 4px;
+    border: 1px solid;
+    border-color: var(--WHITE);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-input:hover,
+.footer-subscribe-input:focus {
+    border-color: var(--IRIS);
+}
+
+.footer-subscribe-btn {
+    border: none;
+    display: flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 4px;
+    background-color: var(--IRIS);
+
+    color: var(--WHITE);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; /* 150% */
+    letter-spacing: 0.64px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-subscribe-btn:hover,
+.footer-subscribe-btn:focus {
+    background-color: var(--OCEAN);
+}
+
+.footer-subscribe-svg {
+    fill: currentColor;
+}
 /* -- Portfolio -- */
 /* Buttons */
 .main-section {
@@ -567,7 +634,10 @@ nav {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.4);
 }
 .btn-close {
     position: absolute;
@@ -747,6 +817,7 @@ nav {
     text-decoration-line: underline;
 }
 .btn-submit {
+    border: none;
     width: 169px;
     padding: 16px 32px;
     text-align: center;
